@@ -928,6 +928,7 @@ body {
     border-radius: 12px;
     border: 2px solid rgba(125, 125, 232, 0.3);
     margin-bottom: 25px;
+    min-width: 0;
 }
 
 .avatar {
@@ -940,20 +941,28 @@ body {
     background: rgba(125, 125, 232, 0.2);
     border-radius: 50%;
     border: 2px solid rgba(125, 125, 232, 0.4);
+    flex-shrink: 0;
 }
 
 .player-details {
     flex: 1;
+    min-width: 0;
+    overflow: hidden;
 }
 
 .player-details div {
     margin-bottom: 5px;
     color: #ffffff;
     font-size: 14px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 .level-display {
     text-align: center;
+    flex-shrink: 0;
+    min-width: 80px;
 }
 
 .level-number {
@@ -1598,5 +1607,24 @@ body {
     .currency-display {
         gap: 10px;
         font-size: 12px;
+    }
+
+    .player-info {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .player-details {
+        width: 100%;
+    }
+
+    .player-details div {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .level-display {
+        min-width: auto;
     }
 }
