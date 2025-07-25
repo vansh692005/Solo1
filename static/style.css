@@ -977,6 +977,12 @@ body {
     color: #cccccc;
 }
 
+#rankName {
+    color: #7d7de8;
+    font-weight: 600;
+    text-shadow: 0 0 8px rgba(125, 125, 232, 0.6);
+}
+
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
