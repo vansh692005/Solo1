@@ -59,7 +59,7 @@ def create_default_game_data(user_id):
         "user_id": user_id,
         "player": {
             "name": "NEW HUNTER",
-            "level": 1,
+            "level": 0,
             "current_xp": 0,
             "xp_to_next_level": 100,
             "class": "BEGINNER",
@@ -265,7 +265,7 @@ def check_daily_reset(data):
 
 def calculate_level_from_xp(total_xp):
     """Calculate level and current XP from total experience"""
-    level = 1
+    level = 0
     xp_needed = 100
     current_xp = total_xp
 
@@ -409,7 +409,7 @@ def check_achievements(data):
 @app.route('/')
 def index():
     if 'user_id' in session:
-        return render_template('game.html')
+        return redirect(url_for('game'))
     return render_template('login.html')
 
 @app.route('/login', methods=['GET', 'POST'])

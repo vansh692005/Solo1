@@ -6,6 +6,119 @@
     box-sizing: border-box;
 }
 
+/* Authentication styles */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a0e27 0%, #1a1a3e 50%, #2d2d5f 100%);
+    font-family: 'Arial', sans-serif;
+}
+
+.auth-form {
+    background: rgba(10, 14, 39, 0.9);
+    border: 2px solid #4a5eb8;
+    border-radius: 15px;
+    padding: 40px;
+    min-width: 400px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(74, 94, 184, 0.3);
+}
+
+.auth-form h1 {
+    color: #ffd700;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.auth-form h2 {
+    color: #4a5eb8;
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background: rgba(74, 94, 184, 0.1);
+    border: 2px solid #4a5eb8;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.auth-form input:focus {
+    border-color: #ffd700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.auth-form input::placeholder {
+    color: #888;
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    background: linear-gradient(45deg, #4a5eb8, #6a7ec8);
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(74, 94, 184, 0.3);
+}
+
+.auth-form button:hover {
+    background: linear-gradient(45deg, #5a6ec8, #7a8ed8);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(74, 94, 184, 0.4);
+}
+
+.auth-form p {
+    color: #cccccc;
+    margin-top: 20px;
+}
+
+.auth-form a {
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.auth-form a:hover {
+    color: #ffffff;
+}
+
+.error-messages {
+    margin-bottom: 20px;
+}
+
+.error {
+    color: #ff6b6b;
+    background: rgba(255, 107, 107, 0.1);
+    border: 1px solid #ff6b6b;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Orbitron', monospace;
     background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
