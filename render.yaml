@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: tb-flask-app
-    env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn main:app"
-    region: oregon
-    plan: free
