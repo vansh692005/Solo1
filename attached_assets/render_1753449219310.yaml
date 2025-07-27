@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: solo-leveleri
-    runtime: python
-    buildCommand: ""
-    startCommand: python main.py
-    envVars:
-      - key: FLASK_ENV
-        value: production
